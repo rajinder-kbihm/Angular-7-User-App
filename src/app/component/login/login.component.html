@@ -1,3 +1,20 @@
 <div class="container">
+    <div class="example-container">
+        <mat-form-field>
+            <input matInput placeholder="Email" type="email" [(ngModel)]="userData.email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Password" type="password" [(ngModel)]="userData.password">
+        </mat-form-field>
+        <button (click)="onSubmit()" class="btn" color="accent" mat-raised-button>Submit</button>
+        <!-- <mat-form-field>
+            <textarea matInput placeholder="Textarea"></textarea>
+        </mat-form-field>s
 
+        <mat-form-field>
+            <mat-select placeholder="Select">
+                <mat-option value="option">Option</mat-option>
+            </mat-select>
+        </mat-form-field> -->
+    </div>
 </div>

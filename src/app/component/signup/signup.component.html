@@ -1,3 +1,38 @@
-<p>
-  signup works!
-</p>
+<div class="container">
+    <div class="example-container">
+        <mat-form-field>
+            <input matInput placeholder="Email" type="email" [(ngModel)]="userData.email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="First Name" type="text" [(ngModel)]="userData.firstName">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Last Name" type="text" [(ngModel)]="userData.lastName">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Age" type="number" [(ngModel)]="userData.age">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Phone" type="tel" [(ngModel)]="userData.phone">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="City" type="text" [(ngModel)]="userData.city">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Pin Code" type="text" [(ngModel)]="userData.pincode">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Password" type="password" [(ngModel)]="userData.password">
+        </mat-form-field>
+        <button (click)="onSubmit()" class="btn" color="accent" mat-raised-button>Submit</button>
+        <!-- <mat-form-field>
+            <textarea matInput placeholder="Textarea"></textarea>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-select placeholder="Select">
+                <mat-option value="option">Option</mat-option>
+            </mat-select>
+        </mat-form-field> -->
+    </div>
+</div>

@@ -16,6 +16,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { HeaderComponent } from './component/header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { UserService } from './shared/service/user.service';
 
 
 @NgModule({
@@ -42,7 +43,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatSelectModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
